@@ -1,0 +1,267 @@
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="VTU fun and activity zone">
+
+    <meta name="keywords" content="vtu, vtu activities, vtu btech, btech">
+
+    <meta name="robots" content="INDEX, FOLLOW">
+
+    <title>Fun and Fun</title>
+
+    <style>
+
+        body {
+
+            background-color: black;
+
+        }
+
+        div {
+
+            display: block;
+
+            align-items: center;
+
+        }
+
+        nav ul {
+
+            list-style-type: none;
+
+        }
+
+        nav {
+
+            width: 100%;
+
+            height: 25vh;
+
+            display: inline-block;
+
+            background-color: rgb(0, 0, 107);
+
+            align-items: center;
+
+            position: relative;
+
+        }
+
+        nav li {
+
+            display: inline-block;
+
+            text-align: center;
+
+            font-size: 7vh;
+
+            padding: 15px 15px;
+
+            list-style-type: none;
+
+            color: wheat;
+
+        }
+
+        nav ul li img {
+
+            height: 12vh;
+
+            width: 12vh;
+
+            rotate: odeg;
+
+            animation: imgrotate 1s ease 1;
+
+        }
+
+        #sun {
+
+            height: 5vh;
+
+            width: 5vh;
+
+            background-image: radial-gradient(circle, white 50%, yellow 20%);
+
+            display: inline;
+
+            position: relative;
+
+            right: 30px;
+
+            top: -120px;
+
+            border-radius: 50% 50%;
+
+            float: right;
+
+        }
+
+        @keyframes imgrotate {
+
+            from {
+
+                rotate: 0deg;
+
+            }
+
+            to {
+
+                rotate: 360deg;
+
+            }
+
+        }
+
+        a {
+
+            color: white;
+
+            text-decoration: none;
+
+        }
+
+        .fun {
+
+            display: block;
+
+            color: white;
+
+            font-size: 20vh;
+
+            margin-top: 25vh;
+
+            text-align: center;
+
+            position: relative;
+
+            animation: cchange 10s ease infinite;
+
+        }
+
+        @keyframes cchange {
+
+            0% {
+
+                color: white;
+
+            }
+
+            20% {
+
+                color: rgb(0, 4, 241);
+
+            }
+
+            40% {
+
+                color: rgb(73, 230, 15);
+
+            }
+
+            60% {
+
+                color: rgb(220, 27, 27);
+
+            }
+
+            80% {
+
+                color: rgb(217, 255, 45);
+
+            }
+
+            100% {
+
+                color: rgb(243, 41, 216);
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body id="b">
+
+    <nav>
+
+        <ul>
+
+            <li onclick="ani()"><img id="img" src="logo1.png" alt="F"></li>
+
+            <li><a href="index.html" class="con">Home</a></li>
+
+            <li><a href="events.html" class="con">Events</a></li>
+
+            <li><a href="about.html" class="con">About us</a></li>
+
+            <li><a href="login.html" class="con">Login</a></li>
+
+        </ul>
+
+        <div id="sun" onclick="bri()"> </div>
+
+    </nav>
+
+    <div class="fun">Fun and Fun</div>
+
+    <script>
+
+        ani = () => {
+
+            let img = document.getElementById('img');
+
+            if (img.style.scale != '1.5') {
+
+                img.style.scale = '1.5';
+
+            }
+
+            else {
+
+                img.style.scale = '1';
+
+            }
+
+        }
+
+        bri = () => {
+
+            let sun = document.getElementById("sun");
+
+            let b = document.getElementById("b");
+
+            if (b.style.background != "white") {
+
+                b.style.background = "white";
+
+                sun.style.backgroundImage = "radial-gradient(circle,black 60%,white 20%)"
+
+            }
+
+            else {
+
+                b.style.background = "black";
+
+                sun.style.backgroundImage = "radial-gradient(circle,white 50%,yellow 20%)"
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+<!-- I typed this whole website  -->
+
+<!-- by pradeep  -->
+
+</html>
